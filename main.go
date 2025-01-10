@@ -33,7 +33,9 @@ func upload2s3(tempFile *os.File) {
 		panic("S3_REGION is not set")
 	}
 
-	err := s3.UploadFile(tempFile, bucket, filepath.Base(tempFile.Name()), region)
+	path := os.Getenv("S3_PATH")
+
+	err := s3.UploadFile(tempFile, bucket, filepath.Base(tempFile.Name()), region, path)
 	if err != nil {
 		logger.Fatalf("Failed to upload data to S3: %v", err)
 	}

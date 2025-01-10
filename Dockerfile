@@ -19,7 +19,7 @@ ENV EMQX_API_NAME=""
 ENV EMQX_API_PASS=""
 ENV S3_BUCKET=""
 ENV S3_REGION=""
-
+ENV S3_PATH=""
 USER nobody
 
 CMD ["./emqx-s3-backup"]

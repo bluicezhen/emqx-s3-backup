@@ -17,7 +17,7 @@ Environment variables:
 - `EMQX_API_PASS`: The API password of EMQX.
 - `S3_BUCKET`: The bucket name of S3.
 - `S3_REGION`: The region of S3.
-
+- `S3_PATH`: The path of S3.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
